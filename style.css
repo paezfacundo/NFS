@@ -1,0 +1,326 @@
+/* ----------------------------------- Contenido principal --------------------------------------- */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background: url("img/fondo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Marvel', sans-serif;
+}
+
+.container {
+  margin: 15px auto;
+  padding: 20px;
+  background-color: rgba(221, 221, 221, 0.8);
+  box-shadow: 2px 2px 4px black;
+  max-width: 60%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* ----------------------------------- Textos --------------------------------------- */
+
+h1 {
+  display: none;
+}
+
+h2 {
+  font-size: 32pt;
+  font-family: 'Contrail One', cursive;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24pt;
+  font-family: 'Sedgwick Ave', cursive;
+}
+
+h4 {
+  text-shadow: 0 0 3px #FF0000;
+  font-family: 'Contrail One', cursive;
+}
+
+/* ----------------------------------- Productos --------------------------------------- */
+
+.product-list {
+  margin-bottom: 30px;
+  margin: auto;
+}
+
+.product-list h2 {
+  margin-bottom: 10px;
+}
+
+.product-list p {
+  font-size: 14pt;
+}
+
+.filter-button {
+  margin: 10px;
+}
+
+#product-list {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+}
+
+.card {
+  max-width: 100%;
+  margin: 10px;
+  box-shadow: 2px 2px 4px black;
+  background-color: rgba(237, 201, 253, 0.75);
+}
+
+.card-img-top {
+  max-height: 300px;
+  object-fit: cover;
+  margin: auto;
+  border: solid 5px aliceblue;
+}
+
+.col-md-8 {
+  width: 100%;
+}
+
+.card .btn-primary{
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.card .btn-success{
+  width: 100%;
+}
+
+/* ----------------------------------- Carrito --------------------------------------- */
+
+.cart {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 200px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.cart h2 {
+  margin-bottom: 10px;
+}
+
+#cart-summary,
+#cart-total {
+  margin-bottom: 5px;
+}
+
+#show-cart-button {
+  width: 100%;
+}
+
+.cart .btn-primary{
+  margin-bottom: 5px;
+}
+
+/* ----------------------------------- Modales --------------------------------------- */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 4px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content .btn-primary{
+  margin-top: 10px;
+}
+
+/* ----------------------------------- Footer --------------------------------------- */
+
+footer {
+  max-width: fit-content;
+  background-color: rgba(221, 221, 221, 0.8);
+  margin: auto;
+  box-shadow: 2px 2px 4px black;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: 16pt;
+  text-align: left;
+  border-radius: 5px;
+}
+
+dl, ol, ul {
+  margin: 5px;
+}
+
+/* ----------------------------------- Oferta --------------------------------------- */
+
+.special-offer-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  z-index: 9999;
+}
+
+/* ----------------------------------- Checkout --------------------------------------- */
+
+#checkout-form .form-group {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#checkout-form button[type="submit"] {
+  margin-top: 5px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+#checkout-button {
+  width: 100%;
+}
+
+input:invalid,
+select:invalid {
+  border: 2px solid red; 
+}
+
+input:required,
+select:required {
+  border: 2px solid #8a2be2;
+}
+
+/* ----------------------------------- Slider --------------------------------------- */
+
+.carousel-item img{
+  width: 70%;
+  height: 300px;
+  margin: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  border: rgba(221, 221, 221, 0.8) 5px solid;
+  box-shadow: 2px 2px 4px black;
+}
+
+.carousel-inner p{
+  text-shadow: 0 0 3px #000000;
+  font-family: 'Sedgwick Ave', cursive;
+  max-width: 80%;
+  margin: auto;
+  color: rgb(240, 248, 255, 0.85);
+}
+
+#carouselExampleCaptions .carousel-control-prev,
+#carouselExampleCaptions  .carousel-control-next {
+    display: none;
+  }
+
+/* ----------------------------------- Propiedades Responsivas --------------------------------------- */
+
+/************* Tablet *************/
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .col-md-8 {
+    width: 100%;
+  }
+
+.cart {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: hsla(0, 0%, 99%, 0.8);
+    margin-top: 20px;
+  }
+
+  .cart h2{
+    font-size: 20pt;
+    margin-bottom: 0px;
+  }
+
+  .modal-content {
+    width: 90%;
+    max-width: 400px;
+    margin: 10% auto;
+  }
+
+  footer{
+    max-width: 100%;
+    margin-bottom: 200px;
+  }
+
+  .carousel-item img{
+    width: 100%;
+  }
+}
+
+/************* Movil *************/
+@media (max-width: 576px) {
+  .container {
+    padding: 10px;
+  }
+
+  .filter-button {
+    margin: 5px;
+  }
+
+  h2 {
+    font-size: 28pt;
+  }
+
+  h3 {
+    font-size: 20pt;
+  }
+
+  img {
+    width: 150px;
+    margin: 10px;
+  }
+}
