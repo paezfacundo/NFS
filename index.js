@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const products = [
     {
-      name: 'Need For Speed: Most Wanted 2012',
+      name: 'Need For Speed: Most Wanted',
       description: 'Lanzado en 2012, es una versión reinventada del juego original de Need for Speed: Most Wanted. En este juego de carreras de mundo abierto, los jugadores compiten en carreras ilegales mientras intentan evadir a la policía. El objetivo principal es convertirse en el corredor más buscado, derrotando a otros corredores en desafíos y carreras callejeras.',
       price: 29.99,
       image: 'img/nfsmw.jpg',
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       gallery: ['img/galeria/4.jpg', 'img/galeria/5.jpg', 'img/galeria/6.jpg']
     },
     {
-      name: 'Need For Speed',
+      name: 'Need For Speed 2015',
       description: 'Lanzado en 2015, este juego simplemente se titula "Need for Speed". Presenta una historia centrada en el mundo de las carreras callejeras nocturnas y los equipos de corredores. Los jugadores participan en carreras, desafíos y persecuciones policiales mientras intentan construir su reputación en la escena de las carreras callejeras. El juego ofrece una amplia personalización de los vehículos y se basa en un mundo abierto para explorar.',
       price: 19.99,
       image: 'img/nfs.jpg',
@@ -133,11 +133,13 @@ function renderProductList(category = 'All') {
     const price = document.createElement('p');
     price.className = 'card-text';
     price.textContent = `Precio: $${product.price.toFixed(2)}`;
-    price.style.border = "3px solid darkviolet";
-    price.style.fontSize = "14pt"
-    price.style.textAlign = "center"
-    price.style.color = "aliceblue"
-    price.style.backgroundColor = "mediumpurple"
+    price.style.borderRadius = "5px";
+    price.style.fontSize = "1.1rem";
+    price.style.textShadow = "1px 1px 2px black";
+    price.style.textAlign = "center";
+    price.style.color = "aliceblue";
+    price.style.backgroundColor = "mediumpurple";
+    price.style.padding = "5px";
 
     const addToCartButton = document.createElement('button');
     addToCartButton.className = 'btn btn-success';
@@ -226,11 +228,13 @@ function renderProductList(category = 'All') {
     productModalTitle.textContent = product.name;
     productModalDescription.textContent = product.description;
     productModalPrice.textContent = `Precio: $${product.price.toFixed(2)}`;
-    productModalPrice.style.border = "5px solid darkviolet";
-    productModalPrice.style.fontSize = "20pt"
-    productModalPrice.style.textAlign = "center"
-    productModalPrice.style.color = "aliceblue"
-    productModalPrice.style.backgroundColor = "mediumpurple"
+    productModalPrice.style.borderRadius = "5px";
+    productModalPrice.style.fontSize = "1.3rem";
+    productModalPrice.style.textShadow = "1px 1px 2px black";
+    productModalPrice.style.textAlign = "center";
+    productModalPrice.style.color = "aliceblue";
+    productModalPrice.style.backgroundColor = "mediumpurple";
+    productModalPrice.style.padding = "5px";
     addToCartModalButton.dataset.index = index;
   
     const galleryInner = document.querySelector("#product-modal-gallery .carousel-inner");
